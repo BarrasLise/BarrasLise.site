@@ -1,0 +1,115 @@
+
+#TableauFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*---------------TABLEAU 1---------------*/
+#tableau1 table, #tableau1 td ,#tableau1 th {
+    border: 1px solid black;
+}
+
+thead,tfoot {
+    text-align: center;
+}
+
+
+#tableau1 tr:nth-child(3) {
+    background-color: #ec89ed;
+}
+#tableau1 tr:nth-child(5) {
+    background-color: #ec89ed;
+}
+#tableau1 tr:nth-child(7) {
+    background-color: #ec89ed;
+}
+
+#tableau1 tr:nth-child(even) {
+    background-color: #e68a68;
+}
+caption {
+    caption-side: bottom;
+    background-color: rgb(207, 246, 246);
+ }
+
+#tableau1 {
+    
+    background-color: rgb(191, 188, 188);
+    /*margin: 5px;*/
+}
+
+/* ------------TABLEAU 2-------------*/
+
+#tableau2 table, #tableau2 td,#tableau2 tr,#tableau2 th{ 
+    border-collapse: collapse; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Items {
+    writing-mode: vertical-lr;
+    text-orientation: upright; /*Sépare les lettres*/
+    color: rgb(160, 153, 153);
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgb(0, 0, 0);
+}
+#LeftCol {
+    writing-mode:vertical-rl ;
+    text-orientation: mixed;
+    transform: scale(-1); /*retourne le texte*/
+    text-align: center;
+    text-transform:uppercase ;
+}
+#RightCol {
+    writing-mode:vertical-rl ;
+    text-orientation: mixed; 
+    text-align: center;
+    background-color: aqua;
+    color: blue;
+    text-transform:uppercase ;
+}
+#title {
+    background-color: rgb(75, 7, 75);
+    color: hsl(302, 72%, 79%);
+    text-align: center;
+    border: 2px solid red; 
+}
+#item {
+    color: rgb(115, 52, 196);
+    background-color: rgb(171, 225, 225);
+    border: 1px solid rgb(10, 169, 156);
+    padding-right: 30px;
+}
+#value {
+    color: rgb(72, 34, 212);
+    background-color: rgb(50, 183, 232);
+    border: 1px solid rgb(9, 9, 176);   
+}
+#BottomLine {
+    color: rgb(115, 52, 196);
+    background-color: rgb(14, 218, 150);
+    transform: scale(-1);
+    text-align: center;
+    text-transform:uppercase ;
+}
+#TableFooter {
+    color: azure;
+    background-color: black;
+}
+#LeftCol {
+    color: rgb(115, 52, 196);
+    background-color: #fa9746;
+    border:#fa9746 solid 2px;
+}
+#TopLine {
+    color: rgb(115, 52, 196);
+    background-color: rgb(242, 230, 3);
+    text-align: center;
+}
+#TableHeader {
+    color: #c18a24;
+    background-color: bisque;
+    border: 2px solid rgb(132, 18, 18);
+}
+
+
+

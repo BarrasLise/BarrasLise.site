@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/e_commerce.css">
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../media/examen/logonoirjauneOrchids Flowers.png">
+    <title>OrchidsFlowers.be</title>
+</head>
+<body>
+<!--------------------------------------- Header ---------------------------------------->
+    <header>
+        <a href="#" class="LogoHeader">
+          <!---- <img class="logo" alt="logo" src="../media/examen/logo Orchids Flowers.png" style="color: white; width: 60px;"/> -->
+            <img class="logo" alt="logo_text" src="../media/examen/txtBlancOrchids Flowers (150.40).png" style="width: 200px;">
+        </a>
+        <i class='bx bx-menu' id="menu_icon"></i>
+        <nav class="navbar"> 
+            <li><a href="#news"> Accueil</a></li>
+            <li><a href="#about"> À propos</a></li> 
+            <li><a href="#shop"> Nos orchidées</a></li> 
+            <li class="deroulant"><a   onmouseover="myDeroulant()" href="../HTML/form_e_commerce.html"> Contact    </a>
+                <ul class="nav_contact">
+                    <li class="sous"><a href="../HTML/form_e_commerce.html#horaires">Horaires</a></li>
+                    <li class="sous"><a href="../HTML/form_e_commerce.html#formulaire">Formulaires de contact</a></li>
+                </ul>
+            </li>        
+        </nav>
+        <!--Icons pannier et Recherche -->
+        <div class="header_icons">
+            <i class='bx bx-cart' id="cart_icon"></i>
+            <i class='bx bx-search' id="search_icon"></i>
+        </div>
+        <!-- Search box-->
+        <div class="search_box">
+            <input type="search" name="" id="" placeholder="Chercher ici...">
+        </div>
+        <!-- Cart box-->  
+    </header>
+    <section id="news" class="news">
+        <div class="news_text">
+            <h1>L'orchidée, <br>notre passion </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur recusandae quaerat quisquam aliquid voluptate at cumque rem, quia eveniet hic id adipisci a optio? Possimus mollitia sequi adipisci nobis illum.</p>
+            <a href="#" class="bouton">Achetez Maintenant</a>
+        </div>
+    </section>
+<!---------------------------------------- À propos/about ----------------------------------------->
+    <section id="about" class="about">
+        <!--Galerie photos ? image d'une serre/jardin -->
+        <div class="about_img">   
+            <img src="../media/examen/orchids_jardinMeise.jpeg" alt="">
+        </div> 
+        <div class="about_text">
+            <h2>Notre histoire</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum velit, fuga illum aut libero consequatur laudantium necessitatibus facere alias quis tempore quidem, facilis nulla illo accusantium quam expedita atque eaque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex facere facilis, eos voluptate consectetur nobis nisi, debitis, amet dolor non ratione blanditiis? Fugiat quidem corporis aliquid possimus dolor eius?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio iure consequuntur eligendi possimus ipsam quisquam optio, in exercitationem illum beatae! Provident corporis accusamus velit, cupiditate temporibus sed hic dolorem earum.</p>
+            <a href="#" class="bouton">En savoir plus</a>
+        </div>
+    </section>   
+    <main id="shop" class="shop">
+        <div class="shop_populaire">
+            <h2>Les plus populaires</h2>
+        </div>
+            <!--Conteneur-->
+        <div class="conteneur_article">
+            <article class="article_box">
+                <img src="../media/examen/orchidee1.jpg" alt="Maxillaria variabilis">
+                <h3>Maxillaria variabilis</h3>
+                <div class="content">
+                    <span>20€</span>  
+                    <div class="quantite">     
+                        <p>Quantité : <input type="number" id="quantite1" maxlength="4" size="4" value="0"/></p>
+                        <a href="#">Ajouter au panier</a> 
+                    </div>     
+                </div> 
+            </article>
+            <article class="article_box">
+                <img src="../media/examen/orchidee2.jpg" alt="Oncidium (LP)">
+                <h3>Oncidium (LP)</h3>
+                <div class="content">
+                    <span>10€</span>  
+                    <div class="quantite">     
+                        <p>Quantité : <input type="number" id="quantite1" maxlength="4" size="4" value="0"/></p>
+                        <a href="#">Ajouter au panier</a> 
+                    </div>    
+                </div>
+            </article>
+            <article class="article_box">
+                <img src="../media/examen/orchidee3.jpg" alt="Darwina Charm Blue Star">
+                <h3>Darwina Charm Blue Star</h3>
+                <div class="content">
+                    <span>20€</span>  
+                    <div class="quantite">     
+                        <p>Quantité : <input type="number" id="quantite1" maxlength="4" size="4" value="0"/></p>
+                        <a href="#">Ajouter au panier</a> 
+                    </div>   
+                </div>
+            </article>
+            <article class="article_box">
+                <img src="../media/examen/orchidee4.jpg" alt="Brassocattleya">
+                <h3>Brassocattleya</h3>
+                <div class="content">
+                    <span>25€</span>  
+                    <div class="quantite">     
+                        <p>Quantité : <input type="number" id="quantite1" maxlength="4" size="4" value="0"/></p>
+                        <a href="#">Ajouter au panier</a> 
+                    </div>   
+                </div>
+            </article>
+            <article class="article_box">
+                <img src="../media/examen/orchidee5.jpg" alt="Paphiopadilum Yachiyo Lady">
+                <h3>Paphiopadilum Yachiyo Lady</h3>
+                <div class="content">
+                    <span>20€</span>  
+                    <div class="quantite">     
+                        <p>Quantité : <input type="number" id="quantite1" maxlength="4" size="4" value="0"/></p>
+                        <a href="#">Ajouter au panier</a> 
+                    </div>    
+                </div>
+            </article>
+            <article class="article_box">
+                <img src="../media/examen/orchidee6.jpg" alt="Paravanda Brauer">
+                <h3>Paravanda Brauer</h3>
+                <div class="content">
+                    <span>35€</span>  
+                    <div class="quantite">     
+                        <p>Quantité : <input type="number" id="quantite1" maxlength="4" size="4" value="0"/></p>
+                        <a href="#">Ajouter au panier</a> 
+                    </div>    
+                </div>
+            </article>
+        </div>
+    </main>
+<!--------------------------------------- Footer ----------------------------------------->
+    <footer class="footer">
+        <div class="footer_box">
+            <h2>Orchids Flowers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, iure.</p>
+            <div class="social">
+                <a href="http://www.facebook.com"><i class='bx bxl-facebook' ></i></a>
+                <a href="http://www.twitter.fr"><i class='bx bxl-twitter' ></i></a>
+                <a href="http://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="footer_box">
+            <h3>Support</h3>        
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">Aide & Support</a></li>
+            <li><a href="#">Politique de retour</a></li>                
+            <li><a href="#">Termes d'utilisation</a></li>      
+        </div>
+        <div class="footer_box" id="contact"> 
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><a href="https://goo.gl/maps/iRvoaRiAvz7PHsQX9"><i class='bx bxs-map'></i>268 Rue Exemple, 1300 Belgique</a></span>
+                <span><a href="tel:+32 *** ** ** **"><i class='bx bxs-phone'></i>+32 400 80 90 60</a></span>
+                <span><a href="mailto:orchids_flowers@shop.be"><i class='bx bxs-envelope'></i>orchids_flowers@shop.be</a></span>
+            </div>  
+        </div>
+    </footer>
+<!------------------------------------- Copyright ------------------------------------>
+    <div class="copyright">
+        <p>&#169; LiseBarras tous droits réservés</p>
+    </div>
+    <!-- link to js-->
+    <script src="../JS/e_commerce.js"></script>
+</body>
+</html>

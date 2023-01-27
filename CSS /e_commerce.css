@@ -1,0 +1,593 @@
+/* Examen LBA Janvier 2023*/
+/*Lise BARRAS*/
+
+/*link google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+}
+header.shadow {
+    background: rgb(243, 184, 5);
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 /15%);
+}
+section {
+    padding: 50px 100px;
+}
+main {
+    padding: 50px 100px;
+}
+footer {
+    padding: 50px 100px;
+}
+/************************* HEADER ***********************/
+.LogoHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.logo img {
+    width: 60px;
+    max-height: 60px;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {  
+    padding: 8px 17px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    background: #EC620B;
+    border-radius: 8px;
+    transition: 0.2s all linear;
+}
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+.deroulant:hover .nav_contact {
+    display: block;
+}
+.nav_contact {
+    display: none;
+    position: absolute;
+    background-color: rgb(243, 184, 5);
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 /15%)
+}
+.sous {
+    float: none;
+    text-align: left;
+    display: list-item;
+    max-width: 280px;  
+    z-index: 1000;
+}
+li {
+    display: inline-block;
+    padding: 10px;
+}
+.header_icons {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header_icons .bx {
+    color:white;
+}
+.header_icons .bx:hover {
+    color: #EC620B;
+}
+#menu_icon {
+    color:white;
+    font-size: 24px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.search_box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+.search_box.active {
+    top: 110%;
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 /15%) ;
+    transition: 0.2s All linear;
+    z-index: 1001;
+}
+.search_box input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #EC620B;
+}
+.search_box input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+}
+/******************* News **************************$*/
+.news {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../media/examen/fond8_1280.jpg) no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem; 
+}
+.news_text h1 {
+    font-size: 3.4rem;
+    color: #EC620B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} 
+.news_text p {
+    font-size: 1.4rem;
+    color: white;
+    margin: 0.5rem 0 1.4rem;
+    width: 650px;
+    line-height: 1.4em;
+    padding-bottom: 20px;
+}
+.bouton {
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: #EC620B;
+    color: white;
+    font-weight: 500;
+    border : none ;
+}
+.bouton:hover {
+    background-color:#a32a17;
+}
+/********************* À propos *************************************/
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about_img img {
+    border-radius: 0.5rem;
+    max-width: 400px;
+}
+.about_text h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.about_text p {
+    font-size: 0.938rem;
+    color: black;
+    margin: 0.5rem 0 1.4rem;
+}
+.shop_populaire {
+    text-align: center;
+}
+.shop_populaire h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.conteneur_article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.conteneur_article .article_box {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 /15%);
+}
+.conteneur_article img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    background:rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    transition: transform .2s;
+}
+.conteneur_article img:hover {
+    transform: scale(1.5);
+    z-index: 1010;
+}
+.conteneur_article .article_box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+}
+.conteneur_article .article_box .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.conteneur_article .article_box .content .quantite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.conteneur_article .article_box .content .quantite a {
+    object-position: center;
+    margin-top: 5px;
+}
+.conteneur_article .article_box .content span {
+    padding: 0 1rem;
+    color: rgb(255, 255, 255);
+    background: rgb(243, 184, 5);
+    border-radius: 4px;
+    font-weight: 500;
+}
+.conteneur_article .article_box .content input {
+    width: 50px; 
+    text-align: center; 
+    border-radius: 0,5rem; 
+    border-color: rgb(243, 184, 5);
+}
+.conteneur_article .article_box .content a {
+    padding: 0 1rem;
+    color: black;
+    border: 2px solid rgb(243, 184, 5);
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.conteneur_article .article_box .content a:hover {
+    background-color: rgb(243, 184, 5);
+    color: white;
+    transition: 0.2s all linear;
+}
+.footer_box li {
+    display: list-item;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    margin-bottom: 30px;
+}
+.footer_box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer_box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+/**** Social ****/
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social a .bx {
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    background: rgb(243, 184, 5);
+    border-radius: 0.2rem;
+}
+.social a .bx:hover {
+    background: #EC620B;
+    color: white;
+}
+.footer_box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer_box li a {
+    color: black;
+}
+.footer_box li a:hover {
+    color: #EC620B;
+}
+/**** contact ****/
+.contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.contact span a {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.contact span a:hover {
+    color: #EC620B;
+}
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.copyright {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    background: rgb(243, 184, 5);
+}
+/****************** Horaires ****************/
+.horaires {
+    margin-top: -100px;
+    width: 100%;
+    min-height: 130vh;
+    background: url(../media/examen/fond\ noir+logo.png) no-repeat;
+    background-size: cover;
+    display: flex;   
+    align-items: center;
+    justify-content: flex-end; 
+}
+.horaires_text {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.horaires_text h1 {   
+    font-size: 3rem;
+    color: #EC620B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+} 
+.horaires_text li {   
+    padding-top: 10px;
+    font-size: 0.938rem;
+    color: white;
+    margin: 0.5rem 0 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/****************** Formulaire ***********************/
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form p {
+    margin: 10px;
+}
+form fieldset {
+    border: none;
+    background-color: rgb(243, 184, 5);
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin: 10px;  
+}
+form legend {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+form label {
+    padding: 5px ;
+    text-align: center;
+}
+form input {
+    margin: 5px;
+    position: center;
+    padding: 5px;  
+}
+form select {
+    margin: 5px;
+    padding: 5px;
+}
+form #message {
+    width: 500px;
+    height: 100px;
+}
+form textarea {
+    display: flex;
+}
+form .bouton {
+    margin: auto 10px;
+}
+/**************** @media ****************/
+@media (max-width: 1058px) {
+    header {
+        padding: 16px 60px;
+    }
+    section {
+        padding: 50px 60px;
+    }
+    .news_text h1 {
+        font-size: 3.4rem;
+    }
+}
+@media (max-width: 991px) {
+    header {
+        padding: 16px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+    main {
+        padding: 50px 4%;
+    }
+    .footer {
+        padding: 50px 4%;
+    }
+    .news_text h1 {
+        font-size: 2rem;
+    }
+    form {
+        padding: 50px 4%;
+    }
+    .horaires {
+        padding: 50px 4%;
+    }
+}
+@media (max-width: 640px) {
+    header {
+        padding: 12px 4%;
+    }
+    section {
+        padding: 12px 4%;
+    } 
+    #menu_icon {
+        display: initial;
+    }
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: 180px;
+        background: rgb(243, 184, 5);
+        
+        padding: 10px;
+        transition: 0,3s;
+        text-align: center;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+    .navbar a {
+        color: black;   
+    }
+    .navbar li {
+        padding: 10px;
+
+    }
+    .navbar a:hover {
+        color: white;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .news {
+        background: url(../media/examen/fond8_640.jpg) ;
+        min-height: 10vh;
+    }
+    .news_text {
+        padding-top: 15px;
+        font-size: 1.4rem;
+    }
+    .news_text h1 {
+        font-size: 1rem; 
+    }
+    .news_text p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .about {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .about_text {
+        text-align: center;
+    }
+    .about_text h2 {
+        font-size: 1.2rem;
+    }
+
+    .horaires {   
+        background-color: black; 
+        padding: 12px 4%;
+    }
+    .horaires_text {
+        padding-top: 15px;
+        font-size: 1.4rem;
+    }
+    .horaires_text h1 {
+        font-size: 1.4rem; 
+    }
+    .horaires_text p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }  
+}
+@media (max-width: 360px) {
+    header {
+        padding: 11px 4%;
+    }
+    section {
+        padding: 11px 4%;
+    }
+    .footer {
+        padding: 11px 4%;
+    }
+    main {
+        padding: 11px 4%;
+        align-items: center;
+    }
+    .logo img {
+        width: 45px;
+    }
+    .news {
+        min-height: 5vh;
+    }
+    .news_text {
+        padding-top: 15px;
+        font-size: 1.4rem;
+    }
+    .news_text p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .news_text h1 {
+        padding-top: 20px;
+        font-weight: 800;
+    }  
+    .shop_populaire h2 {
+        font-size: 1.2rem;
+    }
+    .horaires {
+        padding: 11px 4%;
+    }
+    .horaires_text {
+        padding-top: 15px;
+        font-size: 1.4rem;
+    }
+    .horaires_text p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .horaires_text h1 {
+        padding-top: 20px;
+        font-weight: 800;
+    }  
+    form {
+        padding: 11px 4%;
+    }
+}

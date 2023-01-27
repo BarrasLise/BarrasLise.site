@@ -1,0 +1,103 @@
+/*document CSS pour page html ex04*/
+
+@font-face {
+    font-family: "alex_brush";
+    src: url(../font/alex-brush/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: "kaushan";
+    src: url(../font/kaushan-script/KaushanScript-Regular.otf);
+}
+
+@font-face {
+    font-family: "MrDafoe" ;
+    src: url(../font/Mr_Dafoe/MrDafoe-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Quantico-Bold";
+    src: url(../font/Quantico/Quantico-Bold.ttf);
+}
+
+@font-face {
+    font-family: "MontserraSubrayada-Regular";
+    src: url(../font/Montserrat_Subrayada/MontserratSubrayada-Regular.ttf);
+}
+
+:root {
+    --FontSize: 30px;
+}
+
+* {
+    font-size: var(--FontSize);
+    margin-left: 10px;
+
+}
+
+
+h1 {
+    font-family: "Quantico-Bold", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "alex_brush",sans-serif;
+    
+}
+
+.paragraph {
+    font-family: "kaushan",sans-serif;
+    margin: 20px;
+    border: 3px black;
+    float: right;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: "MontserraSubrayada-Regular",serif;
+    
+    
+}
+
+a:hover[Title]{
+    text-decoration: line-through wavy blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color:  grey;
+}
+
+a[href *= "CV"]{
+    text-decoration : none;
+    color:aqua;
+}
+
+a:hover[href*="maison"]{
+    background-color: aquamarine;
+}
+
+a[Title]{
+    text-decoration: underline wavy red;
+}
+
+.p1 {
+    border: 2px solid blue;
+    margin-left: 400px;
+    padding: 5px;
+}
+
+.orchidee {
+    float: left;
+    height: 250px;
+    margin: 5px;
+}
+
+.orchidee2 {
+    float: right;
+    height: 200px;
+    margin: 5px;
+}

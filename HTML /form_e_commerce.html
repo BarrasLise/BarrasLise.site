@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire OrchidsFlowers.be</title>
+    <link rel="stylesheet" href="../CSS/e_commerce.css">
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../media/examen/logonoirjauneOrchids Flowers.png">
+</head>
+<body>
+    <!--------------------------------------- Header ---------------------------------------->
+    <header style="margin-top: -20px; ">
+        <a href="../HTML/e_commerce.html" class="LogoHeader">
+         <!----  <img class="Logo" alt="logo" src="../media/examen/logo Orchids Flowers.png" style="color: white; width: 60px;"/> -->
+            <img class="logo" alt="logo_text" src="../media/examen/txtBlancOrchids Flowers (150.40).png" style="width: 200px;">
+        </a>
+        <i class='bx bx-menu' id="menu_icon"></i>
+        <nav class="navbar">   
+            <li><a href="../HTML/e_commerce.html#news"> Accueil</a></li>
+            <li><a href="../HTML/e_commerce.html#about"> À propos</a></li> 
+            <li><a href="../HTML/e_commerce.html#shop"> Nos orchidées</a></li> 
+            <li class="deroulant"><a onmouseover="myDeroulant()" href="../HTML/form_e_commerce.html"> Contact</a>
+                <ul class="nav_contact">
+                    <li class="sous"><a href="../HTML/form_e_commerce.html#horaires">Horaires</a></li>
+                    <li class="sous"><a href="../HTML/form_e_commerce.html#formulaire">Formulaires de contact</a></li>
+                </ul>
+            </li>        
+        </nav>
+        <!--Icons pannier et Recherche -->
+        <div class="header_icons">
+            <i class='bx bx-cart'></i>
+            <i class='bx bx-search' id="search_icon"></i>
+        </div>
+        <!-- Search box-->
+        <div class="search_box">
+            <input type="search" name="" id="" placeholder="Chercher ici...">
+        </div>
+    </header>
+    <section class="horaires" id="horaires">
+        <div class="horaires_text">
+            <h1>Nos horaires d'ouverture :</h1>
+            <li>Lundi : 10h00-18h00</li>
+            <li>Mardi : 10h00-18h00</li>
+            <li>Mercredi : 10h00-18h00</li>
+            <li>jeudi : 10h00-18h00</li>
+            <li>Vendredi : 10h00-20h00</li>
+            <li>Samedi : 10h00-18h00</li>
+            <li>Dimanche : Fermé</li>
+        </div>
+    </section>
+    <!--------------------------------------- Formulaire ----------------------------------------->
+    <form class="formulaire" id="formulaire" method="get" action="">
+        <fieldset>
+            <legend>Formulaire de contact</legend>
+            <label>Votre nom</label> :*
+            <input type="text" name="nom" placeholder="exemple : Jeremy" id="nom"
+            size="30" autofocus required></br>  
+            <label>Votre prénom</label> :* 
+            <input type="text" name="prenom" value="" placeholder="exemple : Sherman" id="prenom"
+            size="30" maxlength="20" required></br>
+            <label for="email">Quel est votre e-mail ?*</label>
+            <input type="email" name="email" id="email" size="100" placeholder="exemple : Sherman.jeremy@gmail.com" required><br>
+            <p>
+                Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br>
+                <input type="radio" name="age" value="moins18" id="moins18"> <label for="moins18">Moins de 18 ans</label><br>
+                <input type="radio" name="age" value="medium18-25" id="medium18-25"> <label for="medium18-25">18-25 ans</label><br>
+                <input type="radio" name="age" value="medium25-40" id="medium25-40"> <label for="medium25-40">25-40 ans</label><br>
+                <input type="radio" name="age" value="plus40" id="plus40"> <label for="plus40">Plus de 40 ans</label>
+            </p>
+            <p>
+                <label for="pays">Dans quel pays habitez-vous ?</label><br>
+                <select name="pays" id="pays">
+                    <option value="allemagne">Allemagne</option>
+                    <option value="autriche">Autriche</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="bulgarie">Bulgarie</option>
+                    <option value="chypre">Chypre</option>
+                    <option value="croatie">Croatie</option>
+                    <option value="danemark">Danemark</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="estonie">Estonie</option>
+                    <option value="finlande">Finlande</option>
+                    <option value="france">France</option>
+                    <option value="grece">Grèce</option>
+                    <option value="hongrie">Hongrie</option>
+                    <option value="irlande">Irlande</option>
+                    <option value="italie">Italie</option>
+                    <option value="lettonie">Lettonie</option>
+                    <option value="lituanie">Lituanie</option>
+                    <option value="luxembourg">Luxembourg</option>
+                    <option value="malte">Malte</option>
+                    <option value="paysbas">Pays-Bas</option>
+                    <option value="pologne">Pologne</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="roumanie">Roumanie</option>
+                    <option value="slovaquie">Slovaquie</option>
+                    <option value="slovenie">Slovénie</option>
+                    <option value="suede">Suède</option>
+                    <option value="tchequie">Tchéquie</option>
+                    <option value="royaume-uni">Royaume-Uni (hors UE) </option>
+                    
+                </select>
+            </p>
+            <p>
+                <label for="message">Merci d'écrire vos questions/remarques dans le cadre ci-dessous. </label><br>
+                <textarea name="message" id="message"></textarea> 
+            </p>
+        </fieldset>
+        <!--Bouton envoyer-->
+        <input type="submit" value="Envoyer" class="bouton" onclick="alertFonction()"> 
+        <p>* : signifie que ce champ doit être obligatoirement complété. </p>
+    </form>
+    <!--------------------------------------- Footer ----------------------------------------->
+    <footer class="footer">
+        <div class="footer_box">
+            <h2>Orchids Flowers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, iure.</p>
+            <div class="social">
+                <a href="http://www.facebook.com"><i class='bx bxl-facebook' ></i></a>
+                <a href="http://www.twitter.fr"><i class='bx bxl-twitter' ></i></a>
+                <a href="http://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="footer_box">
+            <h3>Support</h3>    
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">Aide & Support</a></li>
+            <li><a href="#">Politique de retour</a></li>                
+            <li><a href="#">Termes d'utilisation</a></li>      
+        </div>
+        <div class="footer_box" id="contact">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><a href="https://goo.gl/maps/iRvoaRiAvz7PHsQX9"><i class='bx bxs-map'></i>268 Rue Exemple, 1300 Belgique</a></span>
+                <span><a href="tel:+32 *** ** ** **"><i class='bx bxs-phone'></i>+32 400 80 90 60</a></span>
+                <span><a href="mailto:orchids_flowers@shop.be"><i class='bx bxs-envelope'></i>orchids_flowers@shop.be</a></span>
+            </div>  
+        </div>
+    </footer>
+    <!------------------------------------- Copyright ------------------------------------>
+    <div class="copyright">
+        <p>&#169; LiseBarras tous droits réservés</p>
+    </div>
+    <!-- link to js-->
+    <script src="../JS/e_commerce.js"></script>
+</body>
+</html>

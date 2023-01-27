@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07 : Grid</title>
+    <link rel="stylesheet" href="../CSS/ex07_grid.css">
+</head>
+<body>
+    <div class="conteneur">
+        
+        <div class="box une">🦊 Élément 1
+            <section id="tableau1">
+                <table> <!--ici on va avoir un premier tableau*/--->
+                    <caption>Second table </br> caption at bottom</caption>
+                    <thead> <!--THEAD-->
+                            <tr>
+                                <td colspan="3"> Table Head </br> (in 'thead' section) </td>
+                            </tr>
+                    </thead>
+                    <tfoot> <!--TFOOT-->
+                        <tr>
+                            <td colspan="3">Footer </br> (in 'tfoot'section)</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                            <tr><!--premieère ligne du tableau-->
+                                <th> <!--première cellule de la première ligne du tableau -->
+                                    Number
+                                </th>
+                                <th>Item description</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Item 1</td>
+                                <td>1123</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Item 2</td>
+                                <td>2123</td>
+                            </tr> <tr>
+                                <td>3</td>
+                                <td>Item 3</td>
+                                <td>3123</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Item 4</td>
+                                <td>4123</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Item 5</td>
+                                <td>5123</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Item 6</td>
+                                <td>6123</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="box deux">🦄 Élément 2
+            <section id = "tableau2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="TableHeader" colspan="5">Table Header (th)</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td id="TableFooter" colspan="5">Table Footer</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td id="TopLine" colspan="4">Top Line</td>
+                            <td id="RightCol"rowspan="5">Right Col</td>
+                        </tr>
+                        <tr>
+                            <td id="LeftCol" rowspan="5">Left Col</td>
+                            <td id ='title'colspan="3">Title</td>
+                        </tr>
+                        <tr>
+                            <td id = "Items" rowspan="3">Items</td>
+                            <td id="item">Item 1</td>
+                            <td id ="value">Value 1</td>
+                        </tr>
+                        <tr>
+                            <td id = "item">Item 2</td>
+                            <td id = "value">Value 2</td>
+                        </tr>
+                        <tr>
+                            <td id = "item">Item 3</td>
+                            <td id="value">Value 3</td>
+                        </tr>
+                        <tr>
+                            <td id="BottomLine" colspan="4">bottom line</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+        <div class="box trois">🐶 Élément 3
+
+            <section id="tableau1">
+                <table> <!--ici on va avoir un premier tableau*/--->
+                    <caption>Second table </br> caption at bottom</caption>
+                    <thead> <!--THEAD-->
+                            <tr>
+                                <td colspan="3"> Table Head </br> (in 'thead' section) </td>
+                            </tr>
+                    </thead>
+                    <tfoot> <!--TFOOT-->
+                        <tr>
+                            <td colspan="3">Footer </br> (in 'tfoot'section)</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                            <tr><!--premieère ligne du tableau-->
+                                <th> <!--première cellule de la première ligne du tableau -->
+                                    Number
+                                </th>
+                                <th>Item description</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Item 1</td>
+                                <td>1123</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Item 2</td>
+                                <td>2123</td>
+                            </tr> <tr>
+                                <td>3</td>
+                                <td>Item 3</td>
+                                <td>3123</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Item 4</td>
+                                <td>4123</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Item 5</td>
+                                <td>5123</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Item 6</td>
+                                <td>6123</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+        <div class="box quatre">🐨 Élément 4
+            <section id = "tableau2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="TableHeader" colspan="5">Table Header (th)</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td id="TableFooter" colspan="5">Table Footer</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td id="TopLine" colspan="4">Top Line</td>
+                            <td id="RightCol"rowspan="5">Right Col</td>
+                        </tr>
+                        <tr>
+                            <td id="LeftCol" rowspan="5">Left Col</td>
+                            <td id ='title'colspan="3">Title</td>
+                        </tr>
+                        <tr>
+                            <td id = "Items" rowspan="3">Items</td>
+                            <td id="item">Item 1</td>
+                            <td id ="value">Value 1</td>
+                        </tr>
+                        <tr>
+                            <td id = "item">Item 2</td>
+                            <td id = "value">Value 2</td>
+                        </tr>
+                        <tr>
+                            <td id = "item">Item 3</td>
+                            <td id="value">Value 3</td>
+                        </tr>
+                        <tr>
+                            <td id="BottomLine" colspan="4">bottom line</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    
+        
+    </div>
+</body>
+</html>

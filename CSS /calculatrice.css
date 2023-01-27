@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.titre {
+    text-align: center;
+}
+main {
+    padding: 0px 20px 80px 20px;
+}
+.calculatrice {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 4em;
+    margin: 5% auto auto auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+.display {
+    margin-top: 2%;
+    width: 75%;
+    height: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    color:rgb(104, 159, 175);
+    border-radius: 25px;
+    background-color: rgb(187, 243, 244);  
+    text-align: right;
+    font-size: 0.8em;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+.cancel {
+    margin-top: 2%;
+    width: 15%;
+    height: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(255, 228, 148);
+    font-size: 0.8em;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+.button1 {
+    width: 22%;
+    height: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(250, 199, 231);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8em;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+
+.button2 {
+    width: 15%;
+    height: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(205, 109, 246);
+    font-size: 0.8em;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+
+.button3 {
+    width: 22%;
+    height: 15%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(240, 250, 131);
+    font-size: 0.8em;
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
